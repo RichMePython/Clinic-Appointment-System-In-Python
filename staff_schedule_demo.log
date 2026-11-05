@@ -1,0 +1,49 @@
+REGISTER staff #101 Doctor
+REGISTER staff #102 Nurse
+REGISTER staff #103 Pharmacist
+REGISTER patient #201 Tariro
+REGISTER patient #202 Rudo
+REGISTER patient #203 Tendai
+REGISTER patient #204 Simba
+REGISTER staff #104 Doctor and Lecturer
+BOOK #1 patient=#201 staff=#101 hour=10 PENDING
+CONFIRM #1
+FAILED book patient #201 staff #102 hour 10: patient already has an appointment at this hour
+BOOK #2 patient=#201 staff=#103 hour=13 PENDING
+BOOK #3 patient=#202 staff=#103 hour=14 PENDING
+BOOK #4 patient=#203 staff=#103 hour=15 PENDING
+FAILED fview schedule staff #{staff_id}: 'Appointment' object has no attribute 'staff_id'
+REGISTER staff #101 Doctor
+REGISTER staff #102 Nurse
+REGISTER staff #103 Pharmacist
+REGISTER patient #201 Tariro
+REGISTER patient #202 Rudo
+REGISTER patient #203 Tendai
+REGISTER patient #204 Simba
+REGISTER staff #104 Doctor and Lecturer
+BOOK #1 patient=#201 staff=#101 hour=10 PENDING
+CONFIRM #1
+FAILED book patient #201 staff #102 hour 10: patient already has an appointment at this hour
+BOOK #2 patient=#201 staff=#103 hour=13 PENDING
+BOOK #3 patient=#202 staff=#103 hour=14 PENDING
+BOOK #4 patient=#203 staff=#103 hour=15 PENDING
+VIEW SCHEDULE staff = #103
+FAILED fview schedule staff #{staff_id}: unknown staff
+FAILED cancel #1: too late
+REGISTER staff #101 Doctor
+REGISTER staff #102 Nurse
+REGISTER staff #103 Pharmacist
+REGISTER patient #201 Tariro
+REGISTER patient #202 Rudo
+REGISTER patient #203 Tendai
+REGISTER patient #204 Simba
+REGISTER staff #104 Doctor and Lecturer
+BOOK #1 patient=#201 staff=#101 hour=10 PENDING
+CONFIRM #1
+FAILED book patient #201 staff #102 hour 10: patient already has an appointment at this hour
+BOOK #2 patient=#201 staff=#103 hour=13 PENDING
+BOOK #3 patient=#202 staff=#103 hour=14 PENDING
+BOOK #4 patient=#203 staff=#103 hour=15 PENDING
+VIEW SCHEDULE staff = #103
+FAILED fview schedule staff #{staff_id}: unknown staff
+FAILED cancel #1: too late
